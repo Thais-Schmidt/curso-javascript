@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../exercicios/css/styleThaisSchmidt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercicios Javascript</title>
+</head>
+<body>
+    <header>
+        <h1>Exercicios básicos de Javascript</h1>
+    </header>
+
+    <br>
+
+    <div class="container">
+        <!-- Função ao cubo -->
+        <div class="Cubo">
+            <fieldset>
+                <h3>Digite um número para ter o resultado do seu valor elevado ao cubo:</h3>
+                <input type="text" id="numeroEscolhido">  
+                <button id="calcularCubo" onclick="cubo()" >Calcular</button><br><br>
+
+                <h3>O valor ao cubo do número escolhido é:</h3>
+                <input class="fundo" type="text" id="numeroAoCubo" disabled="disabled">
+            </fieldset>
+        </div>
+        <br>
+
+        <!-- Temperatura -->
+        <div class="Temperatura">
+            <fieldset>
+                <h3>Digite uma temperatura em graus Fahrenheit (F): </h3>
+                <input type="text" id="Fahrenheit"> <button id="calcularGrau" onclick="converter()">Calcular</button>
+                <br>
+
+                <h3>Esta temperatura será convertida em graus Celsius (C). <br>
+                Este é o grau correspondente =  <input class="fundo" type="text" name="" id="Celsius" disabled="disabled"></h3>
+            </fieldset>
+        </div>
+        <br>
+
+        <!-- Area do Triangulo -->
+        <div class="areaTriangulo">
+            <fieldset>
+                <h3>Vamos calcular a área de um triângulo a partir da sua base e altura. <br> 
+                    Digite o número referente a base do triângulo:</h3>
+                <input type="text" id="baseT"><br>
+
+                <h3>Agora , digite a altura do triângulo:</h3>
+                <input type="text" id="alturaT"> <button id="calcular" onclick="calculoAreaTriangulo()">Calcular</button>
+                <br>
+
+                <h3>O valor referente a área do triangulo é de:<input class="fundo" type="text" id="areaResposta" disabled="disabled"></h3>
+                <br>
+            </fieldset>
+        </div>
+        <br>
+
+        <!-- Maior ou menor de idade -->
+        <div class="Maioridade">
+            <fieldset>
+                <h3>Você é maior de idade? Sim? Não? <br>
+                    Vamos descobrir:</h3>
+                <h3>Primeiro, digite seu ano de nascimento:<input type="text" id="anoNascimento"></h3>
+                
+                <h3>Agora digite o ano atual: <input type="text" id="anoAtual"></h3>
+
+                <button id="descobrir" onclick="maioroumenor()">Descobrir</button>
+
+                <h3>De acordo com as informações dadas, você: <input class="fundo" type="text" id="respostaMaioridade" disabled="disabled"></h3>
+            </fieldset>
+        </div>
+        <br>
+
+        <!-- Desconto -->
+        <div class="desconto">
+            <fieldset>
+                <h3>Sabe quanto custa o desconto de 5% de algo?<br>
+                    Vamos descobrir.
+                </h3>
+                <h3>Digite um valor qualquer: <input type="text" id="valor"></h3>
+
+                <button id="descobrirDesconto" onclick="descontando()">Calcular</button>
+
+                <h3>O valor do desconto equivale a: <input class="fundo" type="text" id="valorDesconto" disabled="disabled"></h3>
+
+                <h3>E o valor do produto menos o valor do desconto é igual a: <input class="fundo" type="text" id="valorMenosDesconto" disabled="disabled"></h3>
+            </fieldset>
+        </div>
+        <br>
+
+        <!-- carro -->
+        <div class="carro">
+            <fieldset>
+                <h3>Quer saber quantos litros de combustivel você pode comprar com o dinheiro que você tem?<br><br>
+                    E quantos quilômetro seu carro pode rodar com o combustivel comprado?</h3><br>
+
+                <h3>Primeiro, informe o valor que você possui em mãos:</h3><input type="text" id="dinheiro">    <button id="calcularCompra" onclick="valorEmMaos ()">Calcular</button>
+
+                <h3>De acordo com os calculos, voce pode comprar <input class="fundo" type=" text" id="litros" disabled="disabled"> litros de gasolina.<br>
+                    E seu carro pode rodar <input class="fundo" type="text" id="quilometros" disabled="disabled"> quilômetros.</h3>
+            </fieldset>
+        </div>
+    </div>
+
+    <script src="./js/scriptThaisSchmidt.js"></script>    
+</body>
+</html>

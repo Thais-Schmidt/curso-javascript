@@ -1,0 +1,54 @@
+body{
+    font-family: monospace;
+}
+
+header{
+    text-align: center;
+    font-family: monospace;
+    border-bottom: 2px solid crimson;
+    border-left: 10px solid crimson;
+    border-right: 10px solid crimson;
+    padding: 7px;
+    text-decoration: underline;
+}
+
+button{
+    background-color: crimson;
+    color: white;
+    border-radius: 12px;
+    height: 30px;
+    width: 80px;
+    font-family: monospace;
+    border: black solid 1.5px;
+    transition: 0s;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: lightcoral;
+    color: black;
+}
+
+fieldset{
+    border-radius: 15px;
+    border: black solid;
+    
+}
+
+input{
+    border-radius: 10px;
+    border: black 1.5px solid;
+    height: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.fundo{
+    background-color: rgba(220, 20, 60, 0.043);
+}
+
+
+
+
+/* para indicar uma CLASSE usar = . */
+/* oara indicar um ID usar = # */
