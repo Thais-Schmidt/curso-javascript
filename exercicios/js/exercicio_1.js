@@ -1,38 +1,45 @@
-function operacoes(){
-    let numero = new Array(2);
-    numero[0] = parseFloat (document.getElementById("numero1").value);
-    numero[1] = parseFloat (document.getElementById("numero2").value);
-}
+alert("Bem vindo!");
 
 function somando(){
-    let num1 = numero[0]
-    let num2 = numero[1];
-    let soma = num1 + num2; 
+    var numero = new Array(2);
+    numero[0] = parseFloat (document.getElementById("numeroUm").value);
+    numero[1] = parseFloat (document.getElementById("numeroDois").value);
 
-    document.getElementById("resultados") = soma;
+    var soma = numero[0] + numero[1]; 
+
+    document.getElementById("resultados").value = soma;
 }
 
 function subtraindo(){
-    let num1 = numero[0];
-    let num2 = numero[1];
-    let sub = num1 - num2;
-    document.getElementById("resultados") = sub;
+    var numero = new Array(2);
+    numero[0] = parseFloat (document.getElementById("numeroUm").value);
+    numero[1] = parseFloat (document.getElementById("numeroDois").value);
+    var sub = numero[0] - numero[1];
+
+    document.getElementById("resultados").value = sub;
 }
 
 function dividindo(){
-    let num1 = numero[0];
-    let num2 = numero[1];
-    let div = num1/num2;
-    document.getElementById("resultados") = div;
+    var numero = new Array(2);
+    numero[0] = parseFloat (document.getElementById("numeroUm").value);
+    numero[1] = parseFloat (document.getElementById("numeroDois").value);
+
+    var div = numero[0] / numero[1];
+
+    document.getElementById("resultados").value = div;
 }
 
 function multiplicando(){
-    let num1 = numero[0];
-    let num2 = numero[1];
-    let multi = num1*num2;
+    var numero = new Array(2);
+    numero[0] = parseFloat (document.getElementById("numeroUm").value);
+    numero[1] = parseFloat (document.getElementById("numeroDois").value);
 
-    document.getElementById("resultados") = multi;
+    var multi = numero[0] * numero[1];
+
+    document.getElementById("resultados").value = multi;
 }
+
+
 
 
 

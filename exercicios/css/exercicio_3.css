@@ -51,6 +51,7 @@ fieldset{
     width: 800px;
     border: pink 3px solid;
     margin-top: 50px;
+    text-align: center;
 }
 
 #textoEnunciado{
@@ -66,6 +67,7 @@ fieldset{
 
 .enunciado{
     margin-top: 15px;
+
 }
 
 h3{
@@ -74,6 +76,43 @@ h3{
     margin-top: 15px;
 }
 
+.A{
+    width: 260px;
+    height: 400px;
+    padding-top: 5px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content:space-around;
+    margin: 0px 180px 0px 180px;
+    padding-bottom: 40px;
+}
+
+button{
+    background-color: #f3d9e8;
+    color: #91115c;
+    border-radius: 7px;
+    width: auto;
+    height: 20px;
+    border: #91115c solid 1.5px;
+    font-weight:bold;
+    font-family: monospace;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: #91115c;
+    color: #f3d9e8;
+} 
+
+input{
+    border: #91115c solid 1.5px;
+    border-radius: 7px;
+    text-align: center;
+    width: 90px;
+    height: 20px;
+}
 
 
 

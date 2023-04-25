@@ -95,11 +95,12 @@ button:hover{
     display: flex;
     justify-content:space-around;
     margin: 0px 180px 0px 180px;
+    padding-bottom: 40px;
 }
 
 .matriz{
     width: 300px;
-    height: auto;
+    height: 870px;
     text-align: center;
 }
 
