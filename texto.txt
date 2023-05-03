@@ -1,2 +1,16 @@
+Terminar exercicio 4-5-6
+
+Realizar atividade:
+
+Criar uma página que receba um nome e a idade(número inteiro) do usuário;
+Crie uma função em javascript para verificar através da idade informada qual fase da vida a pessoa se encontra;
+Mostrar o resultado em uma div;
+Fases da Vida Humana:
+Criança - até 11 anos de idade;
+Adolescente - dos 12 até 20 anos de idade;
+Adulto - dos 21 até 65 anos de idade;
+Idoso - 65 anos ou mais;
+
+
 
 
