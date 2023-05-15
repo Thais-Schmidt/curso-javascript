@@ -32,33 +32,50 @@
         </div>
     </footer>
     
-    <div id="boasVindas">
-        <h1>Calculadora de I.M.C.</h1>
+    
+
+        <fieldset id="enunciado">
+            <div class="enunciado"">
+                <h1>Calculadora de I.M.C.</h1>
+            </div>
+
+            <div id="textoEnunciado">
+                <h3>
+                    Resultado abaixo de 17 - Muito abaixo do peso; <br>
+                    Resultado entre 17 e 18,49 - Abaixo do peso; <br>
+                    Resultado entre 18,5 e 24,99 - Peso ideal; <br>
+                    Resultado entre 25 e 29,99 - Sobrepeso; <br>
+                    Resultado entre 30 e 34,9 - Obesidade grau I; <br>
+                    Resultado entre 35 E 39,9 - Obesidade grau II(severa); <br>
+                    Resultado acima 40 - Obesidade grau III(mórbida). <br><br>
+                </h3>
+            </div>
+
+        </fieldset>   
+
+    <div id="container">    
+        
+        <fieldset id="exercicio">
+
+            <div id="resposta">
+
+                <form onsubmit="return calcular(event)">
+                    <label>Digite seu peso:</label><br><br>
+                    <input type="text" name="peso" id="peso" placeholder="Exemplo: 65"><br><br>
+
+                    <label>Digite sua altura:</label><br><br>
+                    <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.90"><br><br>
+
+                    <input id="button" type="submit" value="Calcular IMC">
+                </form>
+
+               <div id="resultado"></div> 
+
+            </div>
+        
+        </fieldset>
+
     </div>
-
-    <div id="descExercicio">
-        <h3>
-            Resultado abaixo de 17 - Muito abaixo do peso; <br>
-            Resultado entre 17 e 18,49 - Abaixo do peso; <br>
-            Resultado entre 18,5 e 24,99 - Peso ideal; <br>
-            Resultado entre 25 e 29,99 - Sobrepeso; <br>
-            Resultado entre 30 e 34,9 - Obesidade grau I; <br>
-            Resultado entre 35 E 39,9 - Obesidade grau II(severa); <br>
-            Resultado acima 40 - Obesidade grau III(mórbida). <br>
-        </h3>
-    </div>
-
-    <form onsubmit="return calcular(event)">
-        <label>Digite seu peso:</label><br><br>
-        <input type="text" name="peso" id="peso" placeholder="Exemplo: 65"><br><br>
-
-        <label>Digite sua altura:</label><br><br>
-        <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.90"><br><br>
-
-        <input type="submit" value="Calcular IMC">
-    </form>
-
-    <div id="resultado"></div>
 
 </body>
 </html>

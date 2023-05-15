@@ -44,3 +44,53 @@ ul li a:hover {
 ul li:hover ul.dropdown {
     display: block;
 }
+
+.A{
+    width: 260px;
+    height: 260px;
+    padding-top: 5px;
+}
+
+#container{
+    display: flex;
+    
+    
+}
+
+fieldset{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 800px;
+    border: pink 3px solid;
+    margin-top: 50px;
+}
+
+#button{
+    background-color: #f3d9e8;
+    color: #91115c;
+    border-radius: 7px;
+    width: 97px;
+    height: 25px;
+    border: #91115c solid 1.5px;
+    font-weight:bold;
+    font-family: monospace;
+    transition: 1s;
+}
+
+#button:hover{
+    background-color: #91115c;
+    color: #f3d9e8;
+}
+
+#textoEnunciado{
+    text-align: justify;
+    margin: 15px;
+}
+
+#enunciado{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 900px;
+}
