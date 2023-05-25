@@ -9,7 +9,7 @@ function criandoInputsText(){
     for (let i=1; i<=20; i++){ 
 
         var btnInput = document.createElement("input");
-        var br = document.createElement("br");
+        var br = document.createElement("br"); //criei o elemento br para pular as linhas e o html nao ficar "feio"
         btnInput.setAttribute("type","text");
         btnInput.setAttribute("id", i);
         linha1.appendChild(br);
@@ -46,7 +46,7 @@ function criandoParagrafos(paragrafo){
         btnParagrafo.setAttribute("class", "texto");
         btnParagrafo.setAttribute("id", i); // para colocar um id diferente do outro, utilizei o i do looping, para facilitar 
         btnParagrafo.textContent= l; //textContent adicionou o texto dentro do paragrafo
-        linha3.appendChild(br); 
+        linha3.appendChild(br);
         linha3.appendChild(btnParagrafo);
 
     }
