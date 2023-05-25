@@ -5,7 +5,7 @@ function entrar(){
 
     if(nome ==='' || nome === null){
         alert("Ops, algo deu errado!");
-        area.innerHTML = "Clique no botao para acessar. <br>";
+        area.innerHTML = "Clique no botao para acessar.<br>";
     }
     else{
         area.innerHTML = "Bem vinda! " + nome + ".<br>";
