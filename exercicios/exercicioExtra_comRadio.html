@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio com Radio</title>
+</head>
+<body>
+
+    <!-- Antes tinham 3 forms dentro de uma unica div, as "coisas" ate apareciam no html, porem davam erro. Descobri que o certo e fazer os botoes fora do form. -->
+
+    <div id="area1"></div>
+    <div id="area2"></div>
+    <div id="area3"></div>
+
+    <form>
+
+        <input type="radio" id="texto" name="Check_input" value="input" >
+        <label> Criar Imput </label> <!-- tag usada para colocar texto -->
+        <br> 
+
+        <input type="radio" id="radio" name="Check_input" value="radio" >
+        <label> Criar Radio </label> <!-- tag usada para colocar texto -->
+        <br>
+
+        <input type="radio" id="paragrafo" name="Check_input" value="p" >
+        <label> Criar Paragrafo </label> <!-- tag usada para colocar texto -->
+        <br>
+        <br>
+
+    </form>
+
+    <input type="button" onclick="verificaElemento()" value="Criar Elementos">
+
+        
+    <!-- <button onclick="criandoInputsText()">Input Text</button> <br><br>
+
+    <button onclick="criandoInputsRadio()">Input Radio</button> <br><br>
+
+    <button onclick="criandoParagrafos()">Paragrafos</button> -->
+   
+    <script src="./js/exercicioExtra_comRadio.js"></script>
+</body>
+</html>
