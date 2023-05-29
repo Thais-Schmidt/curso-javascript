@@ -54,8 +54,6 @@ function criandoParagrafos() {
 
 function verificaElemento() {
 
-    
-
     if (document.getElementById('texto').checked) {
         // document.write("Voce escolheu a funçao Imput"); nao estava funcionando com os document.write
         // criandoInputsText();
@@ -65,35 +63,46 @@ function verificaElemento() {
         if (qtde) {
             for (let i=1; i<=qtde; i++){
                 var btnImputs = document.createElement("input");
+                var br = document.createElement("br");
                 local.appendChild(btnImputs);
-
+                local.appendChild(br);
             }
         }
         
     }
-    // if (document.getElementById('radio').checked) {                  essa parte deu errado, tenho que refazer
-    //     // document.write("Voce escolheu a funçao Radio")
-    //     // criandoInputsRadio();
-    //     var local = document.getElementById("area1");
-    //     var qtde = prompt("Quantos Imputs Radio?");
 
-    //     if (qtde) {
-    //         for (let i=1; i<=qtde; i++){
-    //             var numero = qtde;
-    //             var btnImputs = document.createElement("radio");
-    //             btnImputs.setAttribute("type", "radio")
-    //             local.appendChild(btnImputs);
+    if(document.getElementById('radio').checked){
+        var local2 = document.getElementById("area2");
+        var qtde2 = prompt("Quantos Imputs Radio?");
 
-    //         }
-    //     }
-
-
+        if(qtde2){
+            for (let i=1; i<=qtde2; i++){
+                var btnImputR = document.createElement("input");
+                var br = document.createElement("br");
+                btnImputR.setAttribute("type", "radio");
+                local2.appendChild(btnImputR);
+                local2.appendChild(br)
+            }
+        }
 
     }
-    if (document.getElementById('paragrafo').checked) {
-        // document.write("Voce escolheu a funçao Paragrafo")
-        criandoParagrafos();
+
+    if(document.getElementById('paragrafo').checked){
+        var local3 = document.getElementById("area3");
+        var qtde3 = prompt("Quantos Paragrafos?");
+
+        if(qtde3){
+            for (let i=1; i<=qtde3; i++){
+                var l = "Paragrafo " + i;
+                var btnParagrafo = document.createElement("p");
+                var br = document.createElement("br"); 
+                btnParagrafo.textContent = l; //textContent adicionou o texto dentro do paragrafo
+                local3.appendChild(br);
+                local3.appendChild(btnParagrafo);
+            }
+        }
     }
+
 
 }
 
