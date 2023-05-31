@@ -46,7 +46,6 @@ function sair() {
     alert("Até mais!");
     area.innerHTML = "Você saiu.<br>Clique no botao para acessar ou cadastrar."
     botao.removeAttribute("hidden");
-    
 
 }
 
